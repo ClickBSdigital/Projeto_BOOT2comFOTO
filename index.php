@@ -60,7 +60,34 @@ if(isset($_POST['cadastrar'])){
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Sys CAD</title>
     <!-- endereço onde esta o arquivo do js -->
-    <script src="./js/valida.js" defer></script> 
+    <script src="./js/valid2.js" defer></script> 
+    <script src="./js/brincar.js" defer></script> 
+    <style>
+      .esconde{
+        /* display:none; */
+        visibility:hidden;
+      }
+
+      #modal{
+        position: absolute;
+        top:30%;
+        margin:0 auto;
+        height:500px;
+        width: 50%;
+        background:#c1c1c1;
+      }
+
+      #form_modal{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+      }
+      .chama{
+        visibility:visible;
+        background-color:red;
+      }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar- bg-primary">
@@ -133,10 +160,23 @@ if(isset($_POST['cadastrar'])){
                     <option value="3">Root</option>
                   </select>
                 </div>
-                <button type="reset" id="cancelar" class="btn btn-danger">Cancelar</button>
+                <button type="reset" id="fuck" class="btn btn-danger">Cancelar</button>
                 <button type="submit" id="cadastrar" name="cadastrar" class="btn btn-primary">Cadastrar</button>
                 </form>
             </form>
     </div>
+    <dialog open id="modal" class="esconde">
+      <form method="dialog" id="form_modal">
+        <section>
+          <span id="texto"> Cadastado com Sucesso !!! </span>
+        </section>
+        <section>
+          <button type="submit"> OK </button>
+        </section>
+      </form>
+    </dialog>
+
+
+    
 </body>
 </html>
