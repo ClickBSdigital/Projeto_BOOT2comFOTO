@@ -49,7 +49,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){ //VEM ALGO NO POST E TEM CPF??? TEM Q
 
   }else{
     // echo '<script> alert("Erro ao cadastrar!!") </script> '; EM HTML
-    $resposta = array("mensagem" => "Cadastrodo deu ERRO", "status" => "ERRO");
+    $resposta = array("mensagem" => "Erro ao cadastrar!!", "status" => "ERRO");
     echo json_encode($resposta);
   }
 }

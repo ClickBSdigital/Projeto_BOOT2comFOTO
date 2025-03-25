@@ -101,7 +101,7 @@
     <dialog open id="modal" class="esconde">
       <form method="POST" id="form_modal">
         <section>
-          <span id="texto"> Cadastado com Sucesso !!! </span>
+          <span id="texto"> Deseja Cadastrar MESMO !!! </span>
         </section>
         <section>
           <button id="enviar" type="submit"> OK </button>

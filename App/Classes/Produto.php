@@ -12,42 +12,36 @@ class Produto{
 
     public function cadastrar(){
         
-        $db = new Database('usuario');
+        $db = new Database('produto');
         $res = $db->insert(
                 [
                     'nome' => $this->nome,
-                    'email' => $this->email,
-                    'cpf' => $this->cpf,
-                    'senha' => $this->senha,
-                    'id_perfil' => $this->id_perfil,
-                    'foto' => $this->foto
+                    'preco' => $this->preco,                    
+                    'id_perfil' => $this->id_perfil
                 ]
             );
         return $res;
     }
 
     public function buscar($where=null,$order=null,$limit=null){
-        $db = new Database('usuario');
+        $db = new Database('produto');
         $res = $db->select($where,$order,$limit)->fetchAll(PDO::FETCH_CLASS,self::class);
         return $res;
     }
 
     public function buscar_por_id($id){
-        $db = new Database('usuario');
-        $obj = $db->select('id_usuario ='.$id)->fetchObject(self::class);
+        $db = new Database('produto');
+        $obj = $db->select('id_produto ='.$id)->fetchObject(self::class);
         return $obj; //retorna um objeto da CLASSE USUARIO!!!!
     }
 
     public function atualizar(){
-        $db = new Database('usuario');
+        $db = new Database('produto');
 
-        $res = $db->update('id_usuario ='.$this->id_usuario,
+        $res = $db->update('id_produto ='.$this->id_produto,
                             [
                                 "nome" => $this->nome,
-                                "email" => $this->email,
-                                "cpf" => $this->cpf,
-                                "senha" => $this->senha,
-                                "foto" => $this->foto,
+                                "preco" => $this->preco,                              
                                 "id_perfil" => $this->id_perfil
                             ]
                         );
@@ -56,8 +50,8 @@ class Produto{
     }
 
     public function excluir(){
-        $db = new Database('usuario');
-        $res = $db->delete('id_usuario ='.$this->id_usuario);
+        $db = new Database('produto');
+        $res = $db->delete('id_produto ='.$this->id_produto);
         return $res;
     }
 }
