@@ -68,7 +68,7 @@
     
       </div>
     <div id="container" class="container">
-        <h1 class="mt-4 text-center">Cadastro de Usuário</h1>
+        <h1 class="mt-4 text-center">Cadastro de Produtos</h1>
     </div>
     <div class="container">
                     
@@ -79,33 +79,17 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="foto" class="form-label">Foto</label>
-                    <input type="file" class="form-control" id="foto" name="foto">
+                    <label for="preco" class="form-label">Preço</label>
+                    <input type="text" class="form-control" id="preco" name="preco">
                 </div>
-
-
+                
+                
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email">
-                </div>
-                <div class="mb-3">
-                    <label for="cpf" class="form-label">CPF</label>
-                    <input type="text" class="form-control" id="cpf" name="cpf">
-                </div>
-                <div class="mb-3">
-                    <label for="senha" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="senha" name="senha">
-                </div>
-                <div class="mb-3">
-                    <label for="senha" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="confsenha" name="confsenha">
-                </div>
-                <div class="mb-3">
-                  <select class="form-select" name="perfil" aria-label="Default select example">
-                    <option selected>Selecione o ID do Perfil</option>
-                    <option value="1">ADM</option>
-                    <option value="2">Peao</option>
-                    <option value="3">Root</option>
+                  <select class="form-select" name="tipo" aria-label="Default select example">
+                    <option selected>Selecione o Tipo do Produto</option>
+                    <option value="1">Tecnologia</option>
+                    <option value="2">Roupa</option>
+                    <option value="3">Casa</option>
                   </select>
                 </div>
                 <button type="reset" id="fuck" class="btn btn-danger">Cancelar</button>

@@ -7,7 +7,7 @@
 // A CLASSE DE USUÁRIO CONVERTE ESSE DADOS PARA JSON E DEVOLVE ESSES DADOS PARA QUEM CHAMOU
 // POR FIM O JS DEVOLVE ESSE JSON EM FORMATO DE HTML
 
-var dados_do_banco = [
+var data = [
     {
         "nome":"joao",
         "idade":18,
@@ -29,14 +29,19 @@ var dados_do_banco = [
 
 
 ]
-for(var i =0; i < dados_do_banco.length; i++){
+for(var i = 0; i < data.length; i++){
 
-    console.log(dados_do_banco[i].nome.dados_do_banco[i].idade);
+    console.log(data[i].nome,data[i].idade);
 }
 
 
+var form = {
+    "nome":"Fred son",
+    "fone":"6548752",
+    "email":"fradson@email"
+}
 
-
+console.log(form.email)
 
 
 

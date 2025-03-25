@@ -33,7 +33,7 @@ forms_enviar.addEventListener('submit', async function(event) {
 
     const formData = new FormData(formulario);
     let dados_php = await fetch('./teste.php',{ // await espera os dados 
-        method:"POST",
+        method:'POST',
         bory:formData
     })
 
