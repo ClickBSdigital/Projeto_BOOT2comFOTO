@@ -6,7 +6,7 @@ var btn = document.getElementById("cadastrar");
 
 // console.log(btn);
 
-// capitura o modal para manipular o css com js , aparece o modal  que tava escondido
+// captura o modal para manipular o css com js , aparece o modal  que tava escondido
 var modal = document.getElementById("modal");
 console.log(modal);
 // console.log(modal);

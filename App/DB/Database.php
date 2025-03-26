@@ -1,19 +1,19 @@
 <?php
 
 Class Database{
-    // private $conn;
-    // private string $local = 'localhost';
-    // private string $db = 'passcontrol';
-    // private string $user = 'root';
-    // private string $password = '';
-    // private $table;
-
     private $conn;
     private string $local = 'localhost';
     private string $db = 'passcontrol';
-    private string $user = 'devweb';
-    private string $password = 'suporte@22';
+    private string $user = 'root';
+    private string $password = '';
     private $table;
+
+    // private $conn;
+    // private string $local = 'localhost';
+    // private string $db = 'passcontrol';
+    // private string $user = 'devweb';
+    // private string $password = 'suporte@22';
+    // private $table;
 
     function __construct($table = null){
         $this->table = $table;
